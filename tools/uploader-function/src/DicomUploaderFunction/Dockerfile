@@ -1,4 +1,4 @@
-FROM mcr.microsoft.com/dotnet/sdk:6.0.402-alpine3.16@sha256:cfaf6935ad6ec66ae0be7af332523d21cc810d74120b21d95376ae9581090a09 AS installer-env
+FROM mcr.microsoft.com/dotnet/sdk:7.0.101-alpine3.16@sha256:278781cd62ccd4c16133687b653ad9b453e95400b41a3c8e45fbc2acbfa8ce74 AS installer-env
 
 COPY Directory.Build.props Directory.Packages.props global.json nuget.config .editorconfig .globalconfig ./
 COPY ./src/Microsoft.Health.Dicom.Client /src/Microsoft.Health.Dicom.Client
